@@ -1,22 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { io } from "socket.io-client";
+
+const socket = io(`http://localhost:7000`);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header">
+        <img/>
+        <div className="app-name b-500 primaryColor">
+          Real Time Chat
+        </div>
       </header>
     </div>
   );
