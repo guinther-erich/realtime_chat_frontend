@@ -4,6 +4,9 @@
   height: 150px;
   align-items: center;
 }
+.app-header img{
+  height: 50px;
+}
 .app-header > .app-name{
   font-size: 30px;
   margin: 0 20px;
